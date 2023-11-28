@@ -1,14 +1,9 @@
-#ifndef MOVIETHEATREDB_H
-#define MOVIETHEATREDB_H
+//
+// Created by michael on 21/11/23.
+//
 
-// Constants used for the movies and actors
-#define MAX_NAME_LEN  50
-#define MAX_LINK_LEN 50
-#define MAX_TITLE_LEN 100
-#define MAX_GENRE_LEN 25
-
-// True false booleans
-#define TRUE 1
-#define FALSE 0
-
-#endif //MOVIETHEATREDB_H
+#ifndef CS2211_MOVIETHEATREDB_H
+#define CS2211_MOVIETHEATREDB_H
+#define int MAX_MOVIE_NAME = 100;
+#define int MAX_ACTOR_NAME = 50;
+#endif //CS2211_MOVIETHEATREDB_H
