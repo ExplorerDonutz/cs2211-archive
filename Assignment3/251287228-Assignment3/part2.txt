@@ -1,0 +1,22 @@
+Michael Quick (251287228)					             				Oct. 24, 2023
+Assignment 3: Part Two
+1.
+    1. To view files in the current directory without ‘ls’ you could use ‘echo *’. This command will list the names of the files and directories in the current directory because of the wildcard ‘*’ which matches with all files and directories.
+    2. To have a prompt before you remove a file or directory with ‘rm’ you can use the ‘-i’ option, to remove without a prompt use ‘-f’. If both are used at the same time ‘-i’ will take precedence.
+    3. ‘rename’ is a Perl script used for batch renaming, while ‘mv’ is used for moving files, but can also be used to rename them. ‘rename’ is more powerful for renaming, especially for batches of files, whereas ‘mv’ is much simpler and straightforward.
+    4. ELF stands for Executable and Linkable Format. In this context it refers to the file format that executables in Unix operating systems use. The “64-bit LSB executable” represents the architecture and type of executable file.
+    5. ‘ls -l’ shows the size of the file as the amount of space on the disk it uses (0 bytes for an empty file). ‘du’ measures the actual space used on the disk, which even an empty file uses at least a single block, hence why ‘du’ reports a size of 1 block.
+
+2.
+    1. A better way to do this would be to use ‘-p’ with ‘mkdir’ like this ‘mkdir -p grandparent/parent/child’ in order to create the required parent directories if they don’t exist.
+    2. To create a directory with a space in its name, you can use quotes around the directory name: ‘mkdir “directory that has spaces”. You can remove it using ‘rmdir’ or ‘rm -r’ using quotes in the same way.
+    3. You can create directories with specified permissions using ‘mkdir’ with the ‘-m’ option. For example: ‘mkdir -m 500 directoryname’ would create a directory ‘directoryname’ with permissions dr-x------.
+    4. You can use ‘cd -’ to go back to the previous directory you were in.
+    5. To determine the 6th folder in your stack after using ‘pushd’, you can use ‘dirs’. You can use ‘cd +6’ to quickly “cd” to it.
+
+3.
+    1. To print modifications being made with ‘chmod’, you can use the ‘-v’ option
+    2. To set the ownership of ‘file2’ to match ‘file1’ using ‘chown’ you can use the ‘--reference=file1’ option.
+    3. TO display only the file permissions, user ownership, and group ownership with ‘stat’, use the ‘-c’ option with a format string: ‘stat – c “%A %U %G” file.txt’.
+    4. To grant group permission to write data to a file, but prevent users in that group from moving, removing, or renaming the file, set the group ownership of the file and grant write permissions: ‘chown :groupname file.txt’ ‘chmod g+w file.txt’.
+    5. If ‘u/g/o/a’ are omitted in symbolic mode with ‘chmod’ then no changes are made to the permission settings. ‘chmod +x filename’ only adds the execute permission for the owner of the file and leaves group and others’ permissions untouched.
