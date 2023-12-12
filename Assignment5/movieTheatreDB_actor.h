@@ -7,6 +7,7 @@ struct ActorNode {
     struct ActorNode *next;
 };
 
+// Functions used in the main class
 void actorControls();
 void freeActorDatabase();
 #endif //MOVIETHEATREDB_ACTOR_H
